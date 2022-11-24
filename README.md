@@ -1,15 +1,10 @@
 # KotlinPlayGround
 
 Data Structure and algo to practice
-Array
-Linked List
-Hash Table
-Stack
-Queue
-Tree
-Graph
 
 Most Important "chintan" in hindi also allocate some time for this
+
+Array,Linked List ,Hash Table ,Stack ,Queue ,Tree ,Graph
 
 1) Sliding Window
 2) Islands (Matrix Traversal)
