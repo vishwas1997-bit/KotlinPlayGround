@@ -16,12 +16,13 @@ The distinct triplets are [-1,0,1] and [-1,-1,2].
 Notice that the order of the output and the order of the triplets does not matter.
  */
 private fun main() {
-    println(threeSumII(intArrayOf(-1, 0, 1, 2, -1, -4)))
+    println(threeSum(intArrayOf(-1, 0, 1, 2, -1, -4)))
 }
 
 private fun threeSum(nums: IntArray): List<List<Int>> {
     val set = HashSet<List<Int>>()
     val list = ArrayList<List<Int>>()
+    nums.sort()
     for (i in nums.indices) {
         if (i + 1 < nums.size) {
             for (j in i + 1 until nums.size) {
@@ -39,7 +40,7 @@ private fun threeSum(nums: IntArray): List<List<Int>> {
 }
 
 private fun threeSumII(nums: IntArray): List<List<Int>> {
-    val res: MutableSet<List<Int>> = HashSet()
+    val res = HashSet<List<Int>>()
     if (nums.isEmpty()) return ArrayList(res)
     Arrays.sort(nums)
     for (i in nums.indices - 2) {
