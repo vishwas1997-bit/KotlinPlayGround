@@ -26,3 +26,4 @@ Array,Linked List ,Hash Table ,Stack ,Queue ,Tree ,Graph
 18) Fibonacci Numbers
 19) Palindromic Subsequence
 20) Longest Common Substring
+21) Bit Manipulation
