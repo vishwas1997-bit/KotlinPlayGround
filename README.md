@@ -6,9 +6,9 @@ Most Important "chintan" in hindi also allocate some time for this
 
 Array,Linked List ,Hash Table ,Stack ,Queue ,Tree ,Graph
 
-1) Sliding Window
+1) Sliding Window : Done
 2) Islands (Matrix Traversal)
-3) Two Pointers
+3) Two Pointers : Done
 4) Fast & Slow Pointers
 5) Merge Intervals
 6) Cyclic Sort

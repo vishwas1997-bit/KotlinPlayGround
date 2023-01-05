@@ -36,7 +36,7 @@ private fun checkIfExist(arr: IntArray): Boolean {
 
 /**
  * Using HashTable
- * time complexity = O(n^2)
+ * time complexity = O(n)
  * space complexity = O(1)
  */
 private fun checkIfExistUsingHashTable(arr: IntArray): Boolean {
