@@ -3,7 +3,7 @@ package datastructure.array.leetcode
 //Merge Sorted Array
 
 private fun main(){
-    val output = mergeArray(intArrayOf(0),0, intArrayOf(1),1)
+    val output = mergeTest(intArrayOf(1,2,3,0,0,0),3, intArrayOf(2,5,6),3)
     for (i in output){
         print(i)
     }
@@ -44,6 +44,21 @@ private fun mergeArray(nums1: IntArray, m: Int, nums2: IntArray, n: Int): IntArr
             j--
         }
         k--
+    }
+    return nums1
+}
+
+private fun mergeTest(nums1: IntArray, m: Int, nums2: IntArray, n: Int): IntArray{
+    var p1 = m - 1
+    var p2 = n  - 1
+    var p3 = m + n - 1
+
+    while (p2 >= 0){
+        if (nums1[p1] < nums2[p2]){
+            nums1[p3--] = nums2[p2--]
+        } else{
+            nums1[p3--] = nums1[p1--]
+        }
     }
     return nums1
 }
