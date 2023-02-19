@@ -1,6 +1,8 @@
-package datastructure.trees
+package datastructure.trees.leetcode
 
+import datastructure.trees.TreeNode
 import java.util.*
+
 private fun main(){
 
     val root = TreeNode(1)

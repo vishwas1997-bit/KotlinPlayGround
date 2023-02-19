@@ -1,7 +1,9 @@
 package datastructure.array.leetcode
 
+import java.util.Arrays
+
 private fun main(){
-    val output = arrangeZero(intArrayOf(0))
+    val output = arrangeZeroTest(intArrayOf(0,1,2,0,3))
     for (i in output){
         print(i)
     }
@@ -41,4 +43,19 @@ private fun arrangeZero(nums : IntArray) : IntArray{
     }
     
     return nums
+}
+
+private fun arrangeZeroTest(nums : IntArray) : IntArray{
+    if (nums.isEmpty()){
+        return nums
+    }
+    val output = IntArray(nums.size)
+    Arrays.fill(output,0)
+    var pointer = 0
+    for (i in nums){
+        if (i != 0){
+            output[pointer++] = i
+        }
+    }
+    return output
 }

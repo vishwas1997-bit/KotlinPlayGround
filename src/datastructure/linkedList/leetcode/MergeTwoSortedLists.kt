@@ -2,7 +2,7 @@ package datastructure.linkedList.leetcode
 
 import datastructure.linkedList.ListNode
 
-fun main() {
+private fun main() {
     val obj = SolutionLinkedList()
     val list1 = ListNode(1)
     val list2 = ListNode(2)
@@ -23,7 +23,7 @@ fun main() {
  *list1 [1,2]
  * list2 [1,3]
  */
-class SolutionLinkedList {
+private class SolutionLinkedList {
     fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
         if (list1 == null && list2 == null) {
             return null
@@ -38,7 +38,7 @@ class SolutionLinkedList {
             list1.next = mergeTwoLists(list1.next, list2)
             return list1
         }
-        list2.next = mergeTwoLists(list2.next, list1)
+        list2.next = mergeTwoLists(list1, list2.next)
         return list2
     }
 }
