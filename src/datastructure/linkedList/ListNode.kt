@@ -17,7 +17,8 @@ class ListNode(var `val`: Int) {
         fun printList(list : ListNode?){
             var head = list
             while (head != null){
-                println(head.`val`)
+                print(head.`val`)
+                print(" -> ")
                 head = head.next
             }
         }

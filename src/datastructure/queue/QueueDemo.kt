@@ -10,6 +10,7 @@ fun main(){
     queue.add(3)
     queue.add(4)
     queue.add(5)
+    queue.remove()
 
     println("Before : $queue")
     queue.remove()

@@ -38,6 +38,5 @@ fun main() {
         println("the element at $index is $value")
     }
 
-
 }
 
