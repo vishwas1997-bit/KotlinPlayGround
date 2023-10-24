@@ -1,6 +1,4 @@
-package BasicConcept
-
-import javax.xml.bind.JAXBElement.GlobalScope
+package basicConcept
 
 private fun main(){
     val obj1 = SealedClassSample.B()

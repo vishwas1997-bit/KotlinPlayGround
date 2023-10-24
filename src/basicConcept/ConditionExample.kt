@@ -1,4 +1,4 @@
-package BasicConcept
+package basicConcept
 
 fun main() {
 //    val a = 2

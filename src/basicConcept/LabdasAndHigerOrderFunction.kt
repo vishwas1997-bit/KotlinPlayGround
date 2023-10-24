@@ -1,4 +1,4 @@
-package BasicConcept
+package basicConcept
 
 private fun main(){
     println(hola { "Hola, Higher Order function" })

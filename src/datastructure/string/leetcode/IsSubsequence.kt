@@ -1,7 +1,7 @@
 package datastructure.string.leetcode
 
 private fun main(){
-    println(isSubsequence("ace", "abcde"))
+    println(isSubsequence("b", "abc"))
 }
 
 

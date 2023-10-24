@@ -1,4 +1,4 @@
-package BasicConcept
+package basicConcept
 
 fun main() {
     bitwiseOperators()
