@@ -27,7 +27,7 @@ private fun longestPalSubstr(s: String): Int {
         low = i - 1
         hi = i
 
-        // Expand substring while it is palindrome and in bounds
+        // Expand subst ring while it is palindrome and in bounds
         while (low >= 0 && hi < n && s[low] == s[hi]) {
 
             // Update maximum length and starting index
